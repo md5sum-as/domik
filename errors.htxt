@@ -1,0 +1,15 @@
+/*
+ * errors.h
+ *
+ *  Created on: 08.03.2017
+ *      Author: alexs
+ */
+
+#ifndef ERRORS_HTXT_
+#define ERRORS_HTXT_
+
+
+char * ret_segverror(int a);
+
+
+#endif /* ERRORS_HTXT_ */

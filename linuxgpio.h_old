@@ -1,0 +1,19 @@
+/*
+ * linuxgpio.h
+ *
+ *  Created on: 29.10.2015
+ *      Author: alexs
+ */
+
+#ifndef LINUXGPIO_H_
+#define LINUXGPIO_H_
+#include "glob_vars.h"
+
+
+void gpio_spi_xmit (pin_t * dev, __uint8_t * buff, int len);
+int gpio_spi_init();
+void gpio_spi_release();
+void gpio_spi_5V(int on);
+void gpio_spi_3V(int on);
+
+#endif /* LINUXGPIO_H_ */

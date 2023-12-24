@@ -1,0 +1,20 @@
+/*
+ * spi.h
+ *
+ *  Created on: 13.12.2015
+ *      Author: alexs
+ */
+
+#ifndef SPI_H_
+#define SPI_H_
+
+//void spi_use_bcm2835(int);
+int spi_init();
+void spi_release();
+int spi_read(pin_t * dev, __uint8_t * buff, int len);
+int spi_write(pin_t * dev, __uint8_t * buff, int len);
+void spi_set_clock(int clk);
+void spi_on_off_5V(int on);
+void spi_on_off_3V(int on);
+
+#endif /* SPI_H_ */
